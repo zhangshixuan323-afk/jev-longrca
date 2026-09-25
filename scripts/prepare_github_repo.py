@@ -23,7 +23,7 @@ def main():
                     values.append(value.encode())
     payloads = {}
     for path in package_project.selected_paths(ROOT):
-        if path.name == "README.md":
+        if path.relative_to(ROOT).as_posix() == "README.md":
             continue
         if not path.is_file() or path.is_symlink():
             raise ValueError("Expected regular source file: " + str(path.relative_to(ROOT)))

@@ -2,6 +2,12 @@
 
 使用 JEV Choice 接口对 LongRCA Bench 的失败轨迹进行责任角色归因与根因步骤定位，包含原始候选筛选基线、RCTA 启发的实验架构和 Laya 本地对照。
 
+## JEV Choice 版本
+
+JEV Choice 使用 Git 分支管理：`main` 为 v5，历史方案为 `jev-v1`、`jev-v2`、`jev-v3`、`jev-v4`。它们与下方 Adaptive JEV-RCTA 是独立的方法系列。
+
+[本分支 Choice 入口](docs/JEV_CHOICE.md) · [分支对应表](docs/JEV_BRANCHES.md) · [Mini 配对性能](reports/mini_v2_v5_performance.md)
+
 ## 当前实验 pipeline：Adaptive JEV-RCTA v3.1
 
 当前代码实现：**无损原文索引 → 按预算选择完整原文或 RRF/MMR 检索 → JEV 概率排序与结构化标签 → 多轮补证 → 根因预测 → 责任角色判断与原文核验。**

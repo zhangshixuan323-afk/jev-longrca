@@ -19,6 +19,10 @@
       "sha256": "4a2e19bada8727b94dfb750aeab90eeb9b6ac42da7ed4bd47190e0a3212b8ab9",
       "bytes": 105
     },
+    ".gitattributes": {
+      "sha256": "0a5b31ad1303875a53b4de31db9b37aadf08b03c7bb90409d4910d6e827ad2aa",
+      "bytes": 85
+    },
     ".github/workflows/tests.yml": {
       "sha256": "47d0eb5c9d7963a62988e8ff452e8bc4d0b92702ff92f3981c3040719d80ed2b",
       "bytes": 465
@@ -28,8 +32,8 @@
       "bytes": 286
     },
     "README.md": {
-      "sha256": "7e0e03a0e1027cc470f9ffda38220ba59b341fe9f8c4378a9b44221b0a8157c7",
-      "bytes": 8409
+      "sha256": "4ae8b13eea5c970a98f4be35a6d7833d9186c7d9e41add4ab933853439044622",
+      "bytes": 8755
     },
     "REPRODUCE.md": {
       "sha256": "99904548280615269fbd5221dff6b5cc952b43810fe0b6d2d07b9c12c7b84024",
@@ -62,6 +66,14 @@
     "docs/EXPERIMENT_NOTES.md": {
       "sha256": "092d9c56bea4b1755261cad103abf26116648d455e06237af6708d7a976af3d5",
       "bytes": 18619
+    },
+    "docs/JEV_BRANCHES.md": {
+      "sha256": "ad14ba4a4b427ef462564d62b8e742908f7541beebbf240b5953927cbaeef2d0",
+      "bytes": 1746
+    },
+    "docs/JEV_CHOICE.md": {
+      "sha256": "b550422ce73ae0b7063249de3bf9adca230e19fcdab7d8d62e7424b5be936e25",
+      "bytes": 269
     },
     "docs/PIPELINE_FAILURE_ANALYSIS.md": {
       "sha256": "ca389f6ad133c802e63a21d2a286266cc6d7474212c1c8f3e99976d4d90ef778",
@@ -267,6 +279,22 @@
       "sha256": "4f9794b77d39ec8577ad1fcadc059bd63a0a6b3f37c9abd957894416bbe49a0e",
       "bytes": 22708
     },
+    "reports/mini_v2_v5_performance.csv": {
+      "sha256": "e06fcbbe9354d1c3e7413f8ec40b10b741ed9d62de544ca00164ec2ed045ea65",
+      "bytes": 518
+    },
+    "reports/mini_v2_v5_performance.json": {
+      "sha256": "0187be1fd26e9dc7174dca81808006b673b02f3d7f94b81660f85ac10b947533",
+      "bytes": 7829
+    },
+    "reports/mini_v2_v5_performance.md": {
+      "sha256": "de477aba54852291b65b6cca1663b56395a21c52bd30049f2c2b58392ad0c94c",
+      "bytes": 2072
+    },
+    "reports/mini_v2_v5_scored.csv": {
+      "sha256": "d90c583e23e746e92f8c955e7fdd278b5fed717664377ca0bfe6c16d5edb58e2",
+      "bytes": 77212
+    },
     "reports/phase1_metrics.json": {
       "sha256": "fd5e323ac0d3af57238124fbf2f481e884f57079d5d702ab05056bf67f33ed1f",
       "bytes": 2914
@@ -416,12 +444,12 @@
       "bytes": 13716
     },
     "scripts/package_project.py": {
-      "sha256": "4def0ca08ddaa21c84d8d632a86fadbf41b65937e070cee70339d9e36d678a0a",
-      "bytes": 5462
+      "sha256": "e2da6284bcbcea6fb7a9976e36f1afa04d9c90f734810498537abccc632e8643",
+      "bytes": 5941
     },
     "scripts/prepare_github_repo.py": {
-      "sha256": "e8133b8df3cd6a0f2f7d608840e4c2272063f97e4e2a5406af2eac2869a6d50d",
-      "bytes": 4978
+      "sha256": "77ab8ea3d40e4bd9dad25e0b426a87bfff8b76186000da8cce076d9e43247d45",
+      "bytes": 5002
     },
     "scripts/probe_jev_hosted.py": {
       "sha256": "af61b2d5242fbe549fefc6799cb77182faae87ea102db2ffb0847965cad170ff",
@@ -551,22 +579,5 @@
       "sha256": "b57c0d31d1ea50cb2b14350686bccdfeceb2869613e88439689d95f6e54786a7",
       "bytes": 4923
     }
-  },
-  "current_pipeline": {
-    "protocol": "jev-rcta-adaptive-v3.1",
-    "entry": "scripts/evaluate_jev_rcta_adaptive_v3.py",
-    "mini_status": "stopped_by_user",
-    "completed_n": 100,
-    "requested_n": 200,
-    "performance_status": "No accuracy improvement over historical JEV baseline on the matched 100 cases"
-  },
-  "export_validation": {
-    "offline_tests_run": 104,
-    "passed": 99,
-    "skipped": 5,
-    "skip_reason": "Laya isolated environment unavailable",
-    "synthetic_demo_api_calls": 0,
-    "private_credentials_scan": "passed",
-    "frozen_inference_sources_match": 15
   }
 }

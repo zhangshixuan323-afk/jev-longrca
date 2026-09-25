@@ -34,7 +34,7 @@ SECRET_PATTERNS = [re.compile(rb"apikey_[A-Za-z0-9_-]{24,}"),
 
 def selected_paths(root):
     names = ["README.md", "REPRODUCE.md", ".gitignore", ".env.example", "requirements.txt",
-             "requirements-jev.txt", "requirements-lock-cu124.txt",
+             "requirements-jev.txt", "requirements-lock-cu124.txt", ".gitattributes",
              "data/manifest.json", "data/full_manifest.json", "data/DATASET_CARD.md",
              "results/phase1/config.json", "results/full/config.json"]
     names += ["reports/" + name for name in REPORTS]
@@ -43,15 +43,23 @@ def selected_paths(root):
     paths += sorted((root / "tests").glob("*.py"))
     paths += sorted((root / "docs").glob("*.md"))
     paths += sorted((root / "figures").glob("jev-rcta-adaptive-main*"))
-    return paths
+    paths += sorted((root / "prompts").glob("*.json"))
+    paths += sorted((root / "reports").glob("jev_v*_prompts.md"))
+    paths += sorted((root / "reports").glob("mini_v2_v5_*"))
+    approved = root / "reports/jev_prompt_revision.md"
+    if approved.exists():
+        paths.append(approved)
+    paths += sorted((root / "reproducibility").glob("*/*.json"))
+    return sorted(set(paths))
 
 
 def private_values(root):
     """Only compare private values in memory; never print them or add .env to the archive."""
     values = []
-    env = root / ".env"
-    if env.exists():
-        for line in env.read_text().splitlines():
+    for env in root.glob(".env*"):
+        if not env.is_file() or env.name.endswith("example"):
+            continue
+        for line in env.read_text(encoding="utf-8").splitlines():
             if not line.strip().startswith("#") and "=" in line:
                 value = line.split("=", 1)[1].strip().strip("\"'")
                 if len(value) >= 16:
