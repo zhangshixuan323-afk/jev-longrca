@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "offline": true,
+  "network_calls": 0,
+  "trajectories": 200,
+  "requests": 3324,
+  "decisions": 3795,
+  "history_records": 32317,
+  "all_requests_identical": true,
+  "all_decisions_identical": true,
+  "all_prediction_fields_identical": true,
+  "all_original_archive_bytes_identical": true,
+  "original_config_sha256": "b58fcd3f7ff9cf15c68d03597c243af99ee843004ea4f2df78f6dc5de490b3e9",
+  "ported_source_sha256": {
+    "evaluate_jev_v6.py": "5174d99d3832f7be8cd96712b5d4c4cfbbc3c832e8169403f51af45265eb898a",
+    "jev_v6.py": "0bf14a6748afecaf451d0d1805d80f4322c4e1f71d02519fa2536a59dcb95d05",
+    "evaluate.py": "833a0292826c286b18118bb190fa190bc5ee160bb393169f84180b6e0c5d967f",
+    "evaluate_full.py": "4f2dcd30836d13af4bfe8c71be4ce92e99607006b4eb67de21a779f5b2dd9bba",
+    "resume_full.py": "7b419dc71deb0a552dd56cf82afb233ab32663402d714c9883d500273d90b94a",
+    "verify_jev_v6_archive.py": "140296608fa185e274c0489b8b223619ecda8a09487a590cf06e453fcb3a1843"
+  },
+  "seconds": 71.03,
+  "utc": "2026-09-25T12:12:17.324033+00:00",
+  "note": "Behavioral archive replay only. Original fingerprints are preserved, not rewritten. Fresh inference must use a new output directory."
+}

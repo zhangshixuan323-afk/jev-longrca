@@ -7,10 +7,13 @@
 | `jev-v2` | 阶段提示词、历史摘要、3/4/6 保留 | `scripts/evaluate_jev_v2.py` |
 | `jev-v3` | 修订后的六份独立提示词 | `scripts/evaluate_jev_v3.py` |
 | `jev-v4` | 缩减题删两项警示、中置信档保留 5 个 | `scripts/evaluate_jev_v4.py` |
+| `jev-v6` | v1 原文 prompt，初筛和缩减均为 3/5/6 | `scripts/evaluate_jev_v6.py` |
 
 `jev-v3` 对应历史 `jev_v3_mini_reduce_origin`，不是最初 v3。以上是 JEV Choice 的版本，不是目标仓库 Adaptive JEV-RCTA 的版本号。各分支都保留现有 Adaptive RCTA、Laya、托管运行和审计资料。
 
 历史分支保留原版本脚本及必要前序依赖，用于对照与追溯；main 将 v5 实现收敛为两个直接导入的模块，避免为运行 v5 加载 v2/v3/v4 版本入口。不再使用额外的版本管理 CLI 或版本目录，Git 分支负责版本选择。
+
+`jev-v6` 同样使用两个直接导入模块，保留 v5 入口作为参照。v6 的历史 Mini 结果、原始配置和源码快照随分支保存于 `reproducibility/jev-v6-mini/`；完整调用缓存保存在本地忽略目录，迁移验证使用专用的只读重放工具。[v6 记录](../reproducibility/jev-v6-mini/README.md)。
 
 ```bash
 git switch jev-v3

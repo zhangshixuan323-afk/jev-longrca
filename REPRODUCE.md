@@ -4,6 +4,19 @@
 不含 `.env` 密钥、虚拟环境、模型权重、数据正文、逐例预测缓存或原始调用档案。
 `results/` 中只携带 JEV 的两个配置文件，供冻结代码校验和 Laya 对照报告使用，**不会因此跳过任何推理样本**。
 
+## 本分支的 v6
+
+`jev-v6` 使用 v1 原文 prompt，初筛和缩减均为 3/5/6。迁入的已完成 Mini 结果、逐条 CSV、原始配置和源码快照位于 [reproducibility/jev-v6-mini](reproducibility/jev-v6-mini/README.md)。这些是历史观测，不会作为新运行的缓存使用。
+
+```bash
+python -X utf8 scripts/evaluate_jev_v6.py --subset mini --audit-only
+# 配置 API 后，在新的输出目录运行
+python -X utf8 scripts/evaluate_jev_v6.py --subset mini --output results/jev_v6_ported_mini
+python -X utf8 scripts/evaluate_jev_v6.py --subset mini --output results/jev_v6_ported_mini --verify-only
+```
+
+本地 worktree 另有未纳入 Git 的完整原始 `results/jev_v6_mini/` 和 Mini 数据，可用 `python -X utf8 scripts/verify_jev_v6_archive.py` 严格重放迁移验证。干净 Git 检出不含这些大体积文件。源码布局变化使新旧代码摘要不同，不修改原摘要来续跑旧档案。
+
 ## 怎么传给别人
 
 直接发送 `dist/Jev-longRCA-source.zip` 和同目录的 `.zip.sha256` 文件即可，可用聊天工具、邮件附件或网盘。

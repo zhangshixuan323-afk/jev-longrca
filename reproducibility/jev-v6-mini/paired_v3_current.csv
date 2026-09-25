@@ -1,0 +1,197 @@
+﻿question_ID,source,reference_step,reference_role,a_step,b_step,a_role,b_role,a_role_correct,a_step_exact,a_step_within_5,a_valid_role,a_valid_step,a_absolute_step_error,b_role_correct,b_step_exact,b_step_within_5,b_valid_role,b_valid_step,b_absolute_step_error
+swe_bench_pro__008,swe_bench_pro,54,ActionAgent,64,64,ActionAgent,ActionAgent,True,False,False,True,True,10,True,False,False,True,True,10
+swe_bench_pro__009,swe_bench_pro,52,ActionAgent,46,46,ActionAgent,ActionAgent,True,False,False,True,True,6,True,False,False,True,True,6
+swe_bench_pro__010,swe_bench_pro,76,ActionAgent,76,76,ActionAgent,ActionAgent,True,True,True,True,True,0,True,True,True,True,True,0
+swe_bench_pro__012,swe_bench_pro,21,DiagnostAgent (-> ActionAgent),32,32,ActionAgent,ActionAgent,False,False,False,True,True,11,False,False,False,True,True,11
+swe_bench_pro__013,swe_bench_pro,23,DiagnostAgent (-> ActionAgent),26,26,JudgeAgent,ActionAgent,False,False,True,True,True,3,False,False,True,True,True,3
+swe_bench_pro__018,swe_bench_pro,23,DiagnostAgent,54,23,ActionAgent,ActionAgent,False,False,False,True,True,31,False,True,True,True,True,0
+swe_bench_pro__019,swe_bench_pro,57,DiagnostAgent (-> ActionAgent),86,180,ActionAgent,ActionAgent,False,False,False,True,True,29,False,False,False,True,True,123
+swe_bench_pro__024,swe_bench_pro,44,DiagnostAgent (-> ActionAgent),73,42,ActionAgent,ActionAgent,False,False,False,True,True,29,False,False,True,True,True,2
+swe_bench_pro__025,swe_bench_pro,42,DiagnostAgent (-> ActionAgent),36,20,JudgeAgent,DiagnostAgent,False,False,False,True,True,6,True,False,False,True,True,22
+swe_bench_pro__033,swe_bench_pro,99,ActionAgent,109,109,ActionAgent,ActionAgent,True,False,False,True,True,10,True,False,False,True,True,10
+swe_bench_pro__034,swe_bench_pro,66,DiagnostAgent (-> ActionAgent),34,29,ActionAgent,JudgeAgent,False,False,False,True,True,32,False,False,False,True,True,37
+swe_bench_pro__035,swe_bench_pro,25,DiagnostAgent (-> ActionAgent),62,62,ActionAgent,ActionAgent,False,False,False,True,True,37,False,False,False,True,True,37
+swe_bench_pro__036,swe_bench_pro,25,DiagnostAgent,88,88,ActionAgent,ActionAgent,False,False,False,True,True,63,False,False,False,True,True,63
+swe_bench_pro__039,swe_bench_pro,43,DiagnostAgent (-> ActionAgent),565,70,JudgeAgent,ActionAgent,False,False,False,True,True,522,False,False,False,True,True,27
+swe_bench_pro__044,swe_bench_pro,57,DiagnostAgent (-> ActionAgent),176,176,ActionAgent,ActionAgent,False,False,False,True,True,119,False,False,False,True,True,119
+swe_bench_pro__047,swe_bench_pro,133,ActionAgent,30,30,ActionAgent,ActionAgent,True,False,False,True,True,103,True,False,False,True,True,103
+swe_bench_pro__048,swe_bench_pro,33,DiagnostAgent (-> ActionAgent),87,31,JudgeAgent,DiagnostAgent,False,False,False,True,True,54,True,False,True,True,True,2
+swe_bench_pro__049,swe_bench_pro,44,ActionAgent,101,101,JudgeAgent,JudgeAgent,False,False,False,True,True,57,False,False,False,True,True,57
+swe_bench_pro__054,swe_bench_pro,51,DiagnostAgent (-> ActionAgent),90,192,ActionAgent,ActionAgent,False,False,False,True,True,39,False,False,False,True,True,141
+swe_bench_pro__057,swe_bench_pro,80,DiagnostAgent,123,123,ActionAgent,ActionAgent,False,False,False,True,True,43,False,False,False,True,True,43
+swe_bench_pro__058,swe_bench_pro,40,ActionAgent,40,40,ActionAgent,ActionAgent,True,True,True,True,True,0,True,True,True,True,True,0
+swe_bench_pro__065,swe_bench_pro,43,ActionAgent,42,42,ActionAgent,ActionAgent,True,False,True,True,True,1,True,False,True,True,True,1
+swe_bench_pro__068,swe_bench_pro,37,DiagnostAgent (-> ActionAgent),110,110,ActionAgent,ActionAgent,False,False,False,True,True,73,False,False,False,True,True,73
+swe_bench_pro__070,swe_bench_pro,23,DiagnostAgent (-> ActionAgent),23,23,JudgeAgent,DiagnostAgent,False,True,True,True,True,0,True,True,True,True,True,0
+swe_bench_pro__071,swe_bench_pro,27,DiagnostAgent (-> ActionAgent),89,89,ActionAgent,ActionAgent,False,False,False,True,True,62,False,False,False,True,True,62
+swe_bench_pro__074,swe_bench_pro,205,DiagnostAgent (-> ActionAgent),226,226,ActionAgent,ActionAgent,False,False,False,True,True,21,False,False,False,True,True,21
+swe_bench_pro__076,swe_bench_pro,43,DiagnostAgent (-> ActionAgent),78,78,JudgeAgent,ActionAgent,False,False,False,True,True,35,False,False,False,True,True,35
+swe_bench_pro__084,swe_bench_pro,77,DiagnostAgent (-> ActionAgent),222,75,ActionAgent,ActionAgent,False,False,False,True,True,145,False,False,True,True,True,2
+swe_bench_pro__094,swe_bench_pro,35,DiagnostAgent,110,110,ActionAgent,ActionAgent,False,False,False,True,True,75,False,False,False,True,True,75
+swe_bench_pro__095,swe_bench_pro,21,DiagnostAgent (-> ActionAgent),148,157,ActionAgent,ActionAgent,False,False,False,True,True,127,False,False,False,True,True,136
+swe_bench_pro__096,swe_bench_pro,38,ActionAgent,25,336,JudgeAgent,JudgeAgent,False,False,False,True,True,13,False,False,False,True,True,298
+swe_bench_pro__104,swe_bench_pro,29,DiagnostAgent (-> ActionAgent),58,29,JudgeAgent,JudgeAgent,False,False,False,True,True,29,False,True,True,True,True,0
+swe_bench_pro__105,swe_bench_pro,6,Computer_terminal,50,50,JudgeAgent,DiagnostAgent,False,False,False,True,True,44,False,False,False,True,True,44
+swe_bench_pro__112,swe_bench_pro,13,DiagnostAgent (-> ActionAgent),13,13,ActionAgent,JudgeAgent,False,True,True,True,True,0,False,True,True,True,True,0
+swe_bench_pro__114,swe_bench_pro,21,DiagnostAgent (-> ActionAgent),55,55,JudgeAgent,JudgeAgent,False,False,False,True,True,34,False,False,False,True,True,34
+swe_bench_pro__115,swe_bench_pro,45,DiagnostAgent (-> ActionAgent),58,58,ActionAgent,JudgeAgent,False,False,False,True,True,13,False,False,False,True,True,13
+swe_bench_pro__116,swe_bench_pro,17,DiagnostAgent (-> ActionAgent),123,123,JudgeAgent,ActionAgent,False,False,False,True,True,106,False,False,False,True,True,106
+swe_bench_pro__121,swe_bench_pro,15,DiagnostAgent (-> ActionAgent),20,20,ActionAgent,DiagnostAgent,False,False,True,True,True,5,True,False,True,True,True,5
+swe_bench_pro__124,swe_bench_pro,52,ActionAgent,53,36,JudgeAgent,JudgeAgent,False,False,True,True,True,1,False,False,False,True,True,16
+swe_bench_pro__125,swe_bench_pro,35,DiagnostAgent (-> ActionAgent),56,35,ActionAgent,ActionAgent,False,False,False,True,True,21,False,True,True,True,True,0
+terminal_bench_2__001,terminal_bench_2,212,ActionAgent,213,213,ActionAgent,ActionAgent,True,False,True,True,True,1,True,False,True,True,True,1
+terminal_bench_2__002,terminal_bench_2,64,ActionAgent,84,49,DiagnostAgent,ActionAgent,False,False,False,True,True,20,True,False,False,True,True,15
+terminal_bench_2__003,terminal_bench_2,10,DiagnostAgent (-> ActionAgent),13,13,ActionAgent,ActionAgent,False,False,True,True,True,3,False,False,True,True,True,3
+terminal_bench_2__004,terminal_bench_2,69,DiagnostAgent (-> ActionAgent),78,67,JudgeAgent,JudgeAgent,False,False,False,True,True,9,False,False,True,True,True,2
+terminal_bench_2__005,terminal_bench_2,28,DiagnostAgent,252,252,DiagnostAgent,DiagnostAgent,True,False,False,True,True,224,True,False,False,True,True,224
+terminal_bench_2__006,terminal_bench_2,53,DiagnostAgent (-> ActionAgent),22,5,JudgeAgent,DiagnostAgent,False,False,False,True,True,31,True,False,False,True,True,48
+terminal_bench_2__007,terminal_bench_2,28,DiagnostAgent (-> ActionAgent),28,28,JudgeAgent,DiagnostAgent,False,True,True,True,True,0,True,True,True,True,True,0
+terminal_bench_2__008,terminal_bench_2,3,DiagnostAgent (-> ActionAgent),6,6,ActionAgent,ActionAgent,False,False,True,True,True,3,False,False,True,True,True,3
+terminal_bench_2__009,terminal_bench_2,5,DiagnostAgent (-> ActionAgent),21,177,ActionAgent,ActionAgent,False,False,False,True,True,16,False,False,False,True,True,172
+terminal_bench_2__011,terminal_bench_2,3,DiagnostAgent (-> ActionAgent),175,6,JudgeAgent,ActionAgent,False,False,False,True,True,172,False,False,True,True,True,3
+terminal_bench_2__012,terminal_bench_2,36,ActionAgent,36,36,ActionAgent,ActionAgent,True,True,True,True,True,0,True,True,True,True,True,0
+terminal_bench_2__013,terminal_bench_2,15,DiagnostAgent,15,15,DiagnostAgent,DiagnostAgent,True,True,True,True,True,0,True,True,True,True,True,0
+terminal_bench_2__014,terminal_bench_2,7,DiagnostAgent (-> ActionAgent),67,7,DiagnostAgent,ActionAgent,True,False,False,True,True,60,False,True,True,True,True,0
+terminal_bench_2__015,terminal_bench_2,12,ActionAgent,19,19,ActionAgent,JudgeAgent,True,False,False,True,True,7,False,False,False,True,True,7
+terminal_bench_2__017,terminal_bench_2,143,DiagnostAgent (-> ActionAgent),190,5,JudgeAgent,ActionAgent,False,False,False,True,True,47,False,False,False,True,True,138
+terminal_bench_2__018,terminal_bench_2,44,DiagnostAgent (-> ActionAgent),44,44,ActionAgent,ActionAgent,False,True,True,True,True,0,False,True,True,True,True,0
+terminal_bench_2__020,terminal_bench_2,14,ActionAgent,8,8,ActionAgent,ActionAgent,True,False,False,True,True,6,True,False,False,True,True,6
+terminal_bench_2__021,terminal_bench_2,14,ActionAgent,51,51,JudgeAgent,JudgeAgent,False,False,False,True,True,37,False,False,False,True,True,37
+terminal_bench_2__022,terminal_bench_2,5,DiagnostAgent (-> ActionAgent),12,5,ActionAgent,DiagnostAgent,False,False,False,True,True,7,True,True,True,True,True,0
+terminal_bench_2__023,terminal_bench_2,20,ActionAgent,43,20,JudgeAgent,ActionAgent,False,False,False,True,True,23,True,True,True,True,True,0
+terminal_bench_2__024,terminal_bench_2,3,DiagnostAgent (-> ActionAgent),14,14,ActionAgent,ActionAgent,False,False,False,True,True,11,False,False,False,True,True,11
+terminal_bench_2__025,terminal_bench_2,73,ActionAgent,73,73,ActionAgent,ActionAgent,True,True,True,True,True,0,True,True,True,True,True,0
+terminal_bench_2__026,terminal_bench_2,51,ActionAgent,22,22,DiagnostAgent,DiagnostAgent,False,False,False,True,True,29,False,False,False,True,True,29
+terminal_bench_2__027,terminal_bench_2,517,JudgeAgent,161,161,ActionAgent,ActionAgent,False,False,False,True,True,356,False,False,False,True,True,356
+terminal_bench_2__028,terminal_bench_2,57,Computer_terminal,48,3,DiagnostAgent,DiagnostAgent,False,False,False,True,True,9,False,False,False,True,True,54
+terminal_bench_2__030,terminal_bench_2,52,ActionAgent,79,26,ActionAgent,ActionAgent,True,False,False,True,True,27,True,False,False,True,True,26
+terminal_bench_2__031,terminal_bench_2,160,ActionAgent,44,20,JudgeAgent,JudgeAgent,False,False,False,True,True,116,False,False,False,True,True,140
+terminal_bench_2__033,terminal_bench_2,29,ActionAgent,27,27,JudgeAgent,ActionAgent,False,False,True,True,True,2,True,False,True,True,True,2
+terminal_bench_2__034,terminal_bench_2,47,ActionAgent,47,47,ActionAgent,ActionAgent,True,True,True,True,True,0,True,True,True,True,True,0
+terminal_bench_2__035,terminal_bench_2,72,ActionAgent,70,70,ActionAgent,ActionAgent,True,False,True,True,True,2,True,False,True,True,True,2
+terminal_bench_2__036,terminal_bench_2,87,ActionAgent,68,68,JudgeAgent,ActionAgent,False,False,False,True,True,19,True,False,False,True,True,19
+terminal_bench_2__037,terminal_bench_2,179,DiagnostAgent (-> ActionAgent),188,28,ActionAgent,ActionAgent,False,False,False,True,True,9,False,False,False,True,True,151
+terminal_bench_2__039,terminal_bench_2,107,DiagnostAgent,217,186,ActionAgent,ActionAgent,False,False,False,True,True,110,False,False,False,True,True,79
+terminal_bench_2__040,terminal_bench_2,85,ActionAgent,37,85,ActionAgent,ActionAgent,True,False,False,True,True,48,True,True,True,True,True,0
+terminal_bench_2__041,terminal_bench_2,180,ActionAgent,277,277,ActionAgent,ActionAgent,True,False,False,True,True,97,True,False,False,True,True,97
+terminal_bench_2__042,terminal_bench_2,330,DiagnostAgent (-> ActionAgent),15,15,ActionAgent,ActionAgent,False,False,False,True,True,315,False,False,False,True,True,315
+travelplanner__039,travelplanner,54,verifier_agent,137,134,food_attr_agent,stay_agent,False,False,False,True,True,83,False,False,False,True,True,80
+travelplanner__041,travelplanner,46,stay_agent,136,136,verifier_agent,stay_agent,False,False,False,True,True,90,True,False,False,True,True,90
+travelplanner__064,travelplanner,284,manager_agent,284,284,manager_agent,manager_agent,True,True,True,True,True,0,True,True,True,True,True,0
+travelplanner__071,travelplanner,219,transport_agent,45,46,food_attr_agent,Task_Planner,False,False,False,True,True,174,False,False,False,True,True,173
+travelplanner__073,travelplanner,161,verifier_agent,161,161,verifier_agent,verifier_agent,True,True,True,True,True,0,True,True,True,True,True,0
+travelplanner__187,travelplanner,97,stay_agent,178,62,Task_Planner,stay_agent,False,False,False,True,True,81,True,False,False,True,True,35
+travelplanner__221,travelplanner,31,stay_agent,117,117,verifier_agent,verifier_agent,False,False,False,True,True,86,False,False,False,True,True,86
+travelplanner__229,travelplanner,238,food_attr_agent,238,24,food_attr_agent,transport_agent,True,True,True,True,True,0,False,False,False,True,True,214
+travelplanner__240,travelplanner,39,stay_agent,84,42,manager_agent,manager_agent,False,False,False,True,True,45,False,False,True,True,True,3
+travelplanner__243,travelplanner,1,Task_Planner,83,83,manager_agent,manager_agent,False,False,False,True,True,82,False,False,False,True,True,82
+travelplanner__248,travelplanner,45,stay_agent,87,47,manager_agent,stay_agent,False,False,False,True,True,42,True,False,True,True,True,2
+travelplanner__249,travelplanner,69,stay_agent,127,65,manager_agent,stay_agent,False,False,False,True,True,58,True,False,True,True,True,4
+travelplanner__256,travelplanner,114,manager_agent,117,47,manager_agent,manager_agent,True,False,True,True,True,3,True,False,False,True,True,67
+travelplanner__283,travelplanner,70,food_attr_agent,83,60,manager_agent,manager_agent,False,False,False,True,True,13,False,False,False,True,True,10
+travelplanner__293,travelplanner,132,verifier_agent,141,141,verifier_agent,verifier_agent,True,False,False,True,True,9,True,False,False,True,True,9
+travelplanner__297,travelplanner,84,transport_agent,115,115,food_attr_agent,food_attr_agent,False,False,False,True,True,31,False,False,False,True,True,31
+travelplanner__339,travelplanner,78,food_attr_agent,33,29,food_attr_agent,stay_agent,True,False,False,True,True,45,False,False,False,True,True,49
+travelplanner__348,travelplanner,149,stay_agent,67,65,stay_agent,stay_agent,True,False,False,True,True,82,True,False,False,True,True,84
+travelplanner__352,travelplanner,126,verifier_agent,17,17,verifier_agent,transport_agent,True,False,False,True,True,109,False,False,False,True,True,109
+travelplanner__369,travelplanner,84,Computer_terminal,83,8,manager_agent,manager_agent,False,False,True,True,True,1,False,False,False,True,True,76
+travelplanner__446,travelplanner,42,stay_agent,42,42,verifier_agent,verifier_agent,False,True,True,True,True,0,False,True,True,True,True,0
+travelplanner__452,travelplanner,136,stay_agent,5,173,manager_agent,stay_agent,False,False,False,True,True,131,True,False,False,True,True,37
+travelplanner__456,travelplanner,88,stay_agent,26,26,manager_agent,manager_agent,False,False,False,True,True,62,False,False,False,True,True,62
+travelplanner__458,travelplanner,84,stay_agent,77,74,manager_agent,manager_agent,False,False,False,True,True,7,False,False,False,True,True,10
+travelplanner__467,travelplanner,2,Task_Planner,16,16,manager_agent,manager_agent,False,False,False,True,True,14,False,False,False,True,True,14
+travelplanner__478,travelplanner,169,food_attr_agent,32,5,food_attr_agent,manager_agent,True,False,False,True,True,137,False,False,False,True,True,164
+travelplanner__525,travelplanner,70,stay_agent,46,65,verifier_agent,food_attr_agent,False,False,False,True,True,24,False,False,True,True,True,5
+travelplanner__540,travelplanner,107,Task_Planner,104,104,manager_agent,food_attr_agent,False,False,True,True,True,3,False,False,True,True,True,3
+travelplanner__606,travelplanner,20,manager_agent,21,21,manager_agent,manager_agent,True,False,True,True,True,1,True,False,True,True,True,1
+travelplanner__607,travelplanner,65,food_attr_agent,38,38,verifier_agent,stay_agent,False,False,False,True,True,27,False,False,False,True,True,27
+travelplanner__638,travelplanner,14,manager_agent,157,178,manager_agent,manager_agent,True,False,False,True,True,143,True,False,False,True,True,164
+travelplanner__640,travelplanner,108,stay_agent,194,194,stay_agent,stay_agent,True,False,False,True,True,86,True,False,False,True,True,86
+travelplanner__643,travelplanner,161,verifier_agent,161,161,manager_agent,manager_agent,False,True,True,True,True,0,False,True,True,True,True,0
+travelplanner__645,travelplanner,130,stay_agent,108,108,verifier_agent,transport_agent,False,False,False,True,True,22,False,False,False,True,True,22
+travelplanner__646,travelplanner,65,Task_Planner,104,104,stay_agent,stay_agent,False,False,False,True,True,39,False,False,False,True,True,39
+travelplanner__664,travelplanner,88,Task_Planner,90,74,stay_agent,stay_agent,False,False,True,True,True,2,False,False,False,True,True,14
+travelplanner__679,travelplanner,259,Task_Planner,83,83,verifier_agent,stay_agent,False,False,False,True,True,176,False,False,False,True,True,176
+travelplanner__681,travelplanner,35,Computer_terminal,56,56,manager_agent,manager_agent,False,False,False,True,True,21,False,False,False,True,True,21
+travelplanner__684,travelplanner,22,manager_agent,161,152,food_attr_agent,food_attr_agent,False,False,False,True,True,139,False,False,False,True,True,130
+travelplanner__685,travelplanner,173,manager_agent,172,68,manager_agent,manager_agent,True,False,True,True,True,1,True,False,False,True,True,105
+vitabench__005,vitabench,14,Action_Expert,14,14,Action_Expert,Action_Expert,True,True,True,True,True,0,True,True,True,True,True,0
+vitabench__008,vitabench,51,Computer_terminal,25,25,Action_Expert,Action_Expert,False,False,False,True,True,26,False,False,False,True,True,26
+vitabench__010,vitabench,23,Action_Expert,56,15,Action_Expert,Action_Expert,True,False,False,True,True,33,True,False,False,True,True,8
+vitabench__013,vitabench,40,Action_Expert,30,30,Action_Expert,Action_Expert,True,False,False,True,True,10,True,False,False,True,True,10
+vitabench__022,vitabench,12,Action_Expert,10,5,Action_Expert,Action_Expert,True,False,True,True,True,2,True,False,False,True,True,7
+vitabench__025,vitabench,58,Action_Expert,6,10,Action_Expert,Action_Expert,True,False,False,True,True,52,True,False,False,True,True,48
+vitabench__028,vitabench,33,Computer_terminal,8,8,Action_Expert,Action_Expert,False,False,False,True,True,25,False,False,False,True,True,25
+vitabench__030,vitabench,6,Action_Expert,6,6,Action_Expert,Action_Expert,True,True,True,True,True,0,True,True,True,True,True,0
+vitabench__031,vitabench,40,Action_Expert,39,2,Action_Expert,Action_Expert,True,False,True,True,True,1,True,False,False,True,True,38
+vitabench__032,vitabench,4,Action_Expert,98,98,Action_Expert,Action_Expert,True,False,False,True,True,94,True,False,False,True,True,94
+vitabench__034,vitabench,36,Action_Expert,36,36,Action_Expert,Action_Expert,True,True,True,True,True,0,True,True,True,True,True,0
+vitabench__037,vitabench,16,Action_Expert,37,37,Action_Expert,Action_Expert,True,False,False,True,True,21,True,False,False,True,True,21
+vitabench__040,vitabench,20,Action_Expert,74,74,Action_Expert,Action_Expert,True,False,False,True,True,54,True,False,False,True,True,54
+vitabench__041,vitabench,1,Computer_terminal,18,18,Action_Expert,Action_Expert,False,False,False,True,True,17,False,False,False,True,True,17
+vitabench__042,vitabench,41,Action_Expert,54,54,Action_Expert,Action_Expert,True,False,False,True,True,13,True,False,False,True,True,13
+vitabench__045,vitabench,54,Action_Expert,32,32,Action_Expert,Action_Expert,True,False,False,True,True,22,True,False,False,True,True,22
+vitabench__046,vitabench,2,Action_Expert,2,2,Action_Expert,Action_Expert,True,True,True,True,True,0,True,True,True,True,True,0
+vitabench__048,vitabench,26,Action_Expert,48,48,Action_Expert,Action_Expert,True,False,False,True,True,22,True,False,False,True,True,22
+vitabench__049,vitabench,4,Action_Expert,4,4,Action_Expert,Action_Expert,True,True,True,True,True,0,True,True,True,True,True,0
+vitabench__050,vitabench,2,Action_Expert,2,2,Action_Expert,Action_Expert,True,True,True,True,True,0,True,True,True,True,True,0
+vitabench__054,vitabench,10,Action_Expert,10,10,Action_Expert,Action_Expert,True,True,True,True,True,0,True,True,True,True,True,0
+vitabench__057,vitabench,4,Action_Expert,50,50,Action_Expert,Action_Expert,True,False,False,True,True,46,True,False,False,True,True,46
+vitabench__058,vitabench,34,Action_Expert,20,20,Action_Expert,Action_Expert,True,False,False,True,True,14,True,False,False,True,True,14
+vitabench__061,vitabench,2,Action_Expert,2,2,Action_Expert,Action_Expert,True,True,True,True,True,0,True,True,True,True,True,0
+vitabench__062,vitabench,61,Computer_terminal,40,22,Action_Expert,Action_Expert,False,False,False,True,True,21,False,False,False,True,True,39
+vitabench__065,vitabench,13,Action_Expert,4,4,Action_Expert,Action_Expert,True,False,False,True,True,9,True,False,False,True,True,9
+vitabench__070,vitabench,48,Action_Expert,48,48,Action_Expert,Action_Expert,True,True,True,True,True,0,True,True,True,True,True,0
+vitabench__072,vitabench,14,Action_Expert,16,16,Action_Expert,Action_Expert,True,False,True,True,True,2,True,False,True,True,True,2
+vitabench__076,vitabench,10,Action_Expert,34,5,Action_Expert,Action_Expert,True,False,False,True,True,24,True,False,True,True,True,5
+vitabench__083,vitabench,90,Action_Expert,104,7,Action_Expert,Action_Expert,True,False,False,True,True,14,True,False,False,True,True,83
+vitabench__084,vitabench,12,Action_Expert,12,12,Action_Expert,Action_Expert,True,True,True,True,True,0,True,True,True,True,True,0
+vitabench__086,vitabench,26,Action_Expert,34,24,Action_Expert,Action_Expert,True,False,False,True,True,8,True,False,True,True,True,2
+vitabench__087,vitabench,34,Action_Expert,40,34,Action_Expert,Action_Expert,True,False,False,True,True,6,True,True,True,True,True,0
+vitabench__089,vitabench,8,Action_Expert,8,8,Action_Expert,Action_Expert,True,True,True,True,True,0,True,True,True,True,True,0
+vitabench__095,vitabench,15,Computer_terminal,12,20,Action_Expert,Action_Expert,False,False,True,True,True,3,False,False,True,True,True,5
+vitabench__096,vitabench,20,Action_Expert,20,20,Action_Expert,Action_Expert,True,True,True,True,True,0,True,True,True,True,True,0
+vitabench__097,vitabench,16,Action_Expert,16,16,Action_Expert,Action_Expert,True,True,True,True,True,0,True,True,True,True,True,0
+vitabench__099,vitabench,17,Computer_terminal,26,24,Action_Expert,Action_Expert,False,False,False,True,True,9,False,False,False,True,True,7
+vitabench__101,vitabench,14,Action_Expert,35,35,Action_Expert,Action_Expert,True,False,False,True,True,21,True,False,False,True,True,21
+vitabench__105,vitabench,21,Action_Expert,30,19,Action_Expert,Action_Expert,True,False,False,True,True,9,True,False,True,True,True,2
+webarena_verified__004,webarena_verified,42,Task_Planner,46,46,Task_Planner,Action_Expert,True,False,True,True,True,4,False,False,True,True,True,4
+webarena_verified__006,webarena_verified,28,Verification_Expert,34,34,Task_Planner,Task_Planner,False,False,False,True,True,6,False,False,False,True,True,6
+webarena_verified__010,webarena_verified,46,Action_Expert,36,36,Action_Expert,Action_Expert,True,False,False,True,True,10,True,False,False,True,True,10
+webarena_verified__011,webarena_verified,2,Task_Planner,44,56,Task_Planner,Task_Planner,True,False,False,True,True,42,True,False,False,True,True,54
+webarena_verified__012,webarena_verified,18,Verification_Expert,16,6,Action_Expert,Action_Expert,False,False,True,True,True,2,False,False,False,True,True,12
+webarena_verified__013,webarena_verified,6,Action_Expert,34,2,Task_Planner,Task_Planner,False,False,False,True,True,28,False,False,True,True,True,4
+webarena_verified__015,webarena_verified,34,Task_Planner,43,9,Task_Planner,Task_Planner,True,False,False,True,True,9,True,False,False,True,True,25
+webarena_verified__016,webarena_verified,6,Action_Expert,24,24,Task_Planner,Task_Planner,False,False,False,True,True,18,False,False,False,True,True,18
+webarena_verified__024,webarena_verified,44,Task_Planner,19,36,Task_Planner,Task_Planner,True,False,False,True,True,25,True,False,False,True,True,8
+webarena_verified__025,webarena_verified,9,Verification_Expert,58,2,Task_Planner,Task_Planner,False,False,False,True,True,49,False,False,False,True,True,7
+webarena_verified__027,webarena_verified,36,Action_Expert,36,36,Verification_Expert,Verification_Expert,False,True,True,True,True,0,False,True,True,True,True,0
+webarena_verified__028,webarena_verified,34,Task_Planner,36,36,Action_Expert,Action_Expert,False,False,True,True,True,2,False,False,True,True,True,2
+webarena_verified__029,webarena_verified,46,Action_Expert,34,54,Task_Planner,Task_Planner,False,False,False,True,True,12,False,False,False,True,True,8
+webarena_verified__039,webarena_verified,8,Verification_Expert,44,44,Verification_Expert,Verification_Expert,True,False,False,True,True,36,True,False,False,True,True,36
+webarena_verified__042,webarena_verified,29,Verification_Expert,45,46,Action_Expert,Action_Expert,False,False,False,True,True,16,False,False,False,True,True,17
+webarena_verified__045,webarena_verified,6,Action_Expert,46,46,Action_Expert,Task_Planner,True,False,False,True,True,40,False,False,False,True,True,40
+webarena_verified__046,webarena_verified,56,Action_Expert,56,56,Action_Expert,Action_Expert,True,True,True,True,True,0,True,True,True,True,True,0
+webarena_verified__047,webarena_verified,19,Verification_Expert,28,28,Task_Planner,Task_Planner,False,False,False,True,True,9,False,False,False,True,True,9
+webarena_verified__048,webarena_verified,2,Task_Planner,46,46,Action_Expert,Action_Expert,False,False,False,True,True,44,False,False,False,True,True,44
+webarena_verified__054,webarena_verified,56,Action_Expert,26,26,Task_Planner,Task_Planner,False,False,False,True,True,30,False,False,False,True,True,30
+webarena_verified__058,webarena_verified,46,Action_Expert,43,46,Task_Planner,Action_Expert,False,False,True,True,True,3,True,True,True,True,True,0
+webarena_verified__071,webarena_verified,4,Task_Planner,25,56,Task_Planner,Task_Planner,True,False,False,True,True,21,True,False,False,True,True,52
+webarena_verified__082,webarena_verified,56,Action_Expert,24,56,Verification_Expert,Task_Planner,False,False,False,True,True,32,False,True,True,True,True,0
+webarena_verified__083,webarena_verified,7,Task_Planner,6,43,Task_Planner,Task_Planner,True,False,True,True,True,1,True,False,False,True,True,36
+webarena_verified__092,webarena_verified,8,Verification_Expert,8,8,Verification_Expert,Verification_Expert,True,True,True,True,True,0,True,True,True,True,True,0
+webarena_verified__093,webarena_verified,14,Task_Planner,14,13,Task_Planner,Task_Planner,True,True,True,True,True,0,True,False,True,True,True,1
+webarena_verified__096,webarena_verified,46,Action_Expert,46,46,Verification_Expert,Verification_Expert,False,True,True,True,True,0,False,True,True,True,True,0
+webarena_verified__097,webarena_verified,46,Action_Expert,6,6,Task_Planner,Task_Planner,False,False,False,True,True,40,False,False,False,True,True,40
+webarena_verified__106,webarena_verified,46,Action_Expert,35,36,Action_Expert,Action_Expert,True,False,False,True,True,11,True,False,False,True,True,10
+webarena_verified__113,webarena_verified,46,Action_Expert,34,36,Task_Planner,Task_Planner,False,False,False,True,True,12,False,False,False,True,True,10
+webarena_verified__115,webarena_verified,34,Task_Planner,16,16,Task_Planner,Task_Planner,True,False,False,True,True,18,True,False,False,True,True,18
+webarena_verified__117,webarena_verified,16,Action_Expert,14,14,Action_Expert,Action_Expert,True,False,True,True,True,2,True,False,True,True,True,2
+webarena_verified__126,webarena_verified,6,Action_Expert,6,6,Task_Planner,Task_Planner,False,True,True,True,True,0,False,True,True,True,True,0
+webarena_verified__133,webarena_verified,6,Action_Expert,16,16,Task_Planner,Action_Expert,False,False,False,True,True,10,True,False,False,True,True,10
+webarena_verified__135,webarena_verified,46,Action_Expert,46,6,Action_Expert,Task_Planner,True,True,True,True,True,0,False,False,False,True,True,40
+webarena_verified__139,webarena_verified,56,Action_Expert,2,2,Action_Expert,Task_Planner,True,False,False,True,True,54,False,False,False,True,True,54
+webarena_verified__141,webarena_verified,56,Action_Expert,36,36,Task_Planner,Action_Expert,False,False,False,True,True,20,True,False,False,True,True,20
+webarena_verified__151,webarena_verified,56,Action_Expert,6,6,Action_Expert,Action_Expert,True,False,False,True,True,50,True,False,False,True,True,50
+webarena_verified__158,webarena_verified,56,Action_Expert,56,56,Action_Expert,Action_Expert,True,True,True,True,True,0,True,True,True,True,True,0
+webarena_verified__160,webarena_verified,15,Task_Planner,54,6,Task_Planner,Action_Expert,True,False,False,True,True,39,False,False,False,True,True,9

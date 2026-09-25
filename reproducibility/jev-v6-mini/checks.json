@@ -1,0 +1,26 @@
+{
+  "branch": "jev-v6",
+  "base_commit": "2f75143",
+  "unit_tests": {
+    "run": 130,
+    "passed": 125,
+    "skipped": 5,
+    "failed": 0,
+    "skip_reason": "Laya dependency/environment requirements unavailable"
+  },
+  "archive_replay_sha256": "9dff9261e0ffe8bfc56e626a601c709060065a4559448958f63c1fdb18184507",
+  "offline_replayed_trajectories": 200,
+  "offline_replayed_requests": 3324,
+  "offline_replayed_decisions": 3795,
+  "real_api_calls_during_migration": 0,
+  "historical_result_fingerprints_preserved": true,
+  "clean_export_tests": {
+    "run": 130,
+    "passed": 125,
+    "skipped": 5,
+    "failed": 0,
+    "contains_dataset_or_raw_calls": false
+  },
+  "export_preserves_all_prior_tracked_paths": true,
+  "export_credentials_scan": "passed"
+}

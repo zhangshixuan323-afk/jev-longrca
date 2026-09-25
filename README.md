@@ -4,9 +4,9 @@
 
 ## JEV Choice 版本
 
-JEV Choice 使用 Git 分支管理：`main` 为 v5，历史方案为 `jev-v1`、`jev-v2`、`jev-v3`、`jev-v4`。它们与下方 Adaptive JEV-RCTA 是独立的方法系列。
+本分支 `jev-v6` 为 JEV Choice v6：沿用 v1 原文 prompt，初筛和缩减均采用 3/5/6。`main` 保留 v5，历史方案为 `jev-v1`、`jev-v2`、`jev-v3`、`jev-v4`。它们与下方 Adaptive JEV-RCTA 是独立的方法系列。
 
-[本分支 Choice 入口](docs/JEV_CHOICE.md) · [分支对应表](docs/JEV_BRANCHES.md) · [Mini 配对性能](reports/mini_v2_v5_performance.md)
+[本分支 Choice 入口](docs/JEV_CHOICE.md) · [分支对应表](docs/JEV_BRANCHES.md) · [v6 Mini 结果与迁移说明](reproducibility/jev-v6-mini/README.md) · [历史 Mini 配对性能](reports/mini_v2_v5_performance.md)
 
 ## 当前实验 pipeline：Adaptive JEV-RCTA v3.1
 

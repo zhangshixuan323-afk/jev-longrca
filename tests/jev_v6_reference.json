@@ -1,0 +1,62 @@
+{
+  "protocol": "jev-v1-prompts-adaptive-v6",
+  "origin": "Frozen experimental v6 before the two-module port",
+  "cases": [
+    {
+      "steps": 1,
+      "confidence": 0.5,
+      "fragmented": false,
+      "prediction_sha256": "3fcd77b045aa950f281e87b878227705cbb41ae973efa755fc80e1c6868075db",
+      "calls_sha256": "47d66f26b8695d737e40970ea9dd9062185dda45cc5052792be8488767c23821",
+      "calls": 1
+    },
+    {
+      "steps": 3,
+      "confidence": 0.5,
+      "fragmented": false,
+      "prediction_sha256": "8dc1b80300b2567c25e6aaa5399db1a691821eed6973082b735d0ad59f9c9184",
+      "calls_sha256": "40eb63116aed4a12592f065c8e0272f14cfdd0fe1360bd5b8b37cc407b2d1ac7",
+      "calls": 1
+    },
+    {
+      "steps": 280,
+      "confidence": 0.1,
+      "fragmented": false,
+      "prediction_sha256": "bda4a3901826a71b821641657391c546a44ce0858cbc94a2b00e05f853c1018c",
+      "calls_sha256": "f52125cf52d0c286a1ea73716acbf466d39fc61c60fcb013e971a298d1fde96d",
+      "calls": 11
+    },
+    {
+      "steps": 280,
+      "confidence": 0.5,
+      "fragmented": false,
+      "prediction_sha256": "0e1b75af1f9d169cce5ddaab59b13b9fe19cdd1c598201f93331ff3d59f96c75",
+      "calls_sha256": "effa84462394237099aea7b3a3753d14f7763ceb9cb895216f7e41c0fd37c593",
+      "calls": 7
+    },
+    {
+      "steps": 280,
+      "confidence": 0.8,
+      "fragmented": false,
+      "prediction_sha256": "be2a85df6e54054fb9becc15e4451e33c4c574be31cda636ade69215c14468ab",
+      "calls_sha256": "adcf41779ea6dc1c88880c506e6e225ff2641b811f31bbe2adac06a489482f3f",
+      "calls": 5
+    },
+    {
+      "steps": 280,
+      "confidence": null,
+      "fragmented": false,
+      "prediction_sha256": "0a050b3cf1985173af809141abb432e53fdf01920c2eb212a1683b9929fa4540",
+      "calls_sha256": "6295634aeaf5fc8d48063620833edf154782c8ba849aed0513a6b3324bd678d3",
+      "calls": 11
+    },
+    {
+      "steps": 4,
+      "confidence": 0.5,
+      "fragmented": true,
+      "prediction_sha256": "0998c3380617e0b27bf111772e93bf956474c1bd211219155d13533fc572355e",
+      "calls_sha256": "2c8ca9c1b618e8573a9423f0e4ccf21c513090bb5a2964f9cfa88d5a389c3d98",
+      "calls": 3
+    }
+  ]
+}

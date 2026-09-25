@@ -1,20 +1,31 @@
-# main：JEV Choice v5
+# jev-v6：JEV Choice v6
 
-v5 使用原始基线的完整步骤/角色提示词，保留自适应候选和历史摘要。初筛高/中/低置信档保留 3/4/6，缩减保留 3/5/6，阈值为 0.70、0.30；每组及最终候选最多 8 个。题级 confidence 非法时按低档处理。角色与根因步骤仍独立判断。
+v6 使用 v1 完整步骤/角色提示词，保留历史摘要。初筛和缩减的高/中/低 confidence 档均保留 3/5/6，阈值为 0.70、0.30。初筛不超过分段选项数；缩减不超过组内数量减一，最终候选最多八个。角色与根因步骤分别判断。
 
-`scripts/jev_v5.py` 直接实现筛选、交接扩展、有限历史和最终推理；`scripts/evaluate_jev_v5.py` 直接实现运行、重试、余额停止、精确缓存、决策记录、离线重放和配对报告。两个模块复用原仓库的数据与评分函数，不再动态加载历史版本入口。
+`scripts/jev_v6.py` 直接实现推理，`scripts/evaluate_jev_v6.py` 直接实现运行、重试、余额停止、缓存、离线核验和配对报告。运行 v6 无须动态加载旧版本入口；原有 v5、Adaptive RCTA、Laya 入口保留。
 
 ```bash
-python -X utf8 scripts/evaluate_jev_v5.py --subset mini --audit-only
-# 真实运行，须配置 API，并使用新的独立目录
-python -X utf8 scripts/evaluate_jev_v5.py --subset mini --output results/jev_v5_merged_mini
-python -X utf8 scripts/evaluate_jev_v5.py --subset mini --output results/jev_v5_merged_mini --verify-only
+python -X utf8 scripts/evaluate_jev_v6.py --subset mini --audit-only
+# 真实运行需要配置 API，使用新的独立输出目录
+python -X utf8 scripts/evaluate_jev_v6.py --subset mini --output results/jev_v6_ported_mini
+python -X utf8 scripts/evaluate_jev_v6.py --subset mini --output results/jev_v6_ported_mini --verify-only
 ```
 
-支持 `--subset full`、`--smoke`、`--workers`、`--api-key-file`。数据可通过原有 download_mini/download_full 脚本下载。默认输出目录仍为 `results/jev_v5_<subset>`；遇到不同源码/提示词/数据摘要会拒绝混用。由于本次代码结构简化，旧工作区的 v5 档案应使用原代码重放，不直接作为这个实现的续跑缓存。
+支持 `--subset full`、`--smoke`、`--workers`、`--api-key-file`。数据使用原有下载脚本；本地工作树已复制校验过的 Mini 数据，Git 不跟踪轨迹正文。
 
-输出包括 config、calls、decisions、predictions、部分失败信息、逐条 CSV、指标、配对比较和中文报告。缺少历史档案时对应比较显示不可用，当前运行仍可独立完成。
+## 已完成的实验与离线重放
 
-[历史分支](JEV_BRANCHES.md) · [六份提示词](../reports/jev_v5_prompts.md) · [Mini 配对性能](../reports/mini_v2_v5_performance.md)
+原始实验 200/200 成功：根因精确 21.50%、角色 47.50%、±5 命中 36.00%、MAE 39.33。代码迁移本身没有重新请求模型。
 
-本次合并用原 v5 的 195 条成功样本离线重放：2,889 次请求、3,350 条决策和全部预测字段均与精简前一致。另有 7 组固定响应回归覆盖短轨迹、长轨迹、低/中/高/缺失置信度和分片。[验证记录](../reproducibility/jev-v5-merge/validation.json)
+完整原始缓存原样复制到本地 `results/jev_v6_mini/`，继续受 `.gitignore` 排除。Git 跟踪的报告、逐条 CSV、指标、配置、原始源码快照和文件清单位于 `reproducibility/jev-v6-mini/`。
+
+```bash
+# 原始档案的严格完整性检查，以及用迁移后代码逐条重放（无 API 调用）
+python -X utf8 scripts/verify_jev_v6_archive.py
+```
+
+该命令需要本地原始缓存和 Mini 数据，检查所有原始文件的字节、原始配置引用的源码摘要、每次请求、筛选决策、最终预测、文本覆盖与评分。
+
+迁移后的源码布局和摘要与原实验不同，因此原档案不能直接作为新运行的续跑缓存。专用重放验证行为一致，不修改原配置或摘要，也不会把旧缓存标为迁移后代码产生的结果。只有 Git 源码和报告的干净检出仍可进行单元测试或启动全新实验；原始调用正文不在 Git 中。
+
+[全部 prompt](../reports/jev_v6_prompts.md) · [结果与迁移记录](../reproducibility/jev-v6-mini/README.md) · [分支对应表](JEV_BRANCHES.md)

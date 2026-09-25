@@ -51,6 +51,9 @@ def selected_paths(root):
     if approved.exists():
         paths.append(approved)
     paths += sorted((root / "reproducibility").glob("*/*.json"))
+    # Portable v6 results and frozen source provenance, never execution caches.
+    paths += sorted(p for p in (root / "reproducibility/jev-v6-mini").rglob("*")
+                    if p.is_file() and p.suffix in (".py", ".json", ".csv", ".md"))
     return sorted(set(paths))
 
 
