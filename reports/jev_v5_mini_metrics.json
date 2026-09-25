@@ -1,0 +1,173 @@
+{
+  "protocol": {
+    "model": "jev-1.13.0",
+    "chunk_bytes": 44000,
+    "piece_bytes": 16000,
+    "task_bytes": 6000,
+    "outcome_bytes": 8000,
+    "evidence_bytes": 2400,
+    "neighbor_bytes": 500,
+    "handoff_bytes": 1600,
+    "protocol": "jev-v1-prompts-adaptive-v5",
+    "recall": {
+      "low_threshold": 0.3,
+      "high_threshold": 0.7,
+      "high_keep": 3,
+      "medium_keep": 4,
+      "low_keep": 6
+    },
+    "reduce": {
+      "low_threshold": 0.3,
+      "high_threshold": 0.7,
+      "high_keep": 3,
+      "medium_keep": 5,
+      "low_keep": 6
+    },
+    "reduce_group_size": 8,
+    "final_candidate_limit": 8,
+    "bypass_group_size": 3
+  },
+  "dataset_revision": "9f45acb66948d5d20c663b4ce4ec8ea5ab0076dd",
+  "evaluated_n": 200,
+  "overall": {
+    "n": 200,
+    "role_correct": 0.48,
+    "step_exact": 0.21,
+    "step_within_5": 0.355,
+    "valid_role": 0.975,
+    "valid_step": 0.975,
+    "valid_output_root_mae": 34.53333333333333,
+    "source_weighted_valid_output_root_mae": 34.955
+  },
+  "by_source": {
+    "swe_bench_pro": {
+      "n": 40,
+      "role_correct": 0.275,
+      "step_exact": 0.125,
+      "step_within_5": 0.325,
+      "valid_role": 1.0,
+      "valid_step": 1.0,
+      "valid_output_root_mae": 46.175
+    },
+    "terminal_bench_2": {
+      "n": 40,
+      "role_correct": 0.45,
+      "step_exact": 0.275,
+      "step_within_5": 0.4,
+      "valid_role": 0.875,
+      "valid_step": 0.875,
+      "valid_output_root_mae": 51.4
+    },
+    "travelplanner": {
+      "n": 40,
+      "role_correct": 0.375,
+      "step_exact": 0.125,
+      "step_within_5": 0.25,
+      "valid_role": 1.0,
+      "valid_step": 1.0,
+      "valid_output_root_mae": 43.45
+    },
+    "vitabench": {
+      "n": 40,
+      "role_correct": 0.85,
+      "step_exact": 0.35,
+      "step_within_5": 0.475,
+      "valid_role": 1.0,
+      "valid_step": 1.0,
+      "valid_output_root_mae": 15.95
+    },
+    "webarena_verified": {
+      "n": 40,
+      "role_correct": 0.45,
+      "step_exact": 0.175,
+      "step_within_5": 0.325,
+      "valid_role": 1.0,
+      "valid_step": 1.0,
+      "valid_output_root_mae": 17.8
+    }
+  },
+  "by_method": {
+    "full_context": {
+      "n": 30,
+      "role_correct": 0.8333333333333334,
+      "step_exact": 0.43333333333333335,
+      "step_within_5": 0.6,
+      "valid_role": 1.0,
+      "valid_step": 1.0,
+      "valid_output_root_mae": 10.766666666666667
+    },
+    "missing": {
+      "n": 5,
+      "role_correct": 0.0,
+      "step_exact": 0.0,
+      "step_within_5": 0.0,
+      "valid_role": 0.0,
+      "valid_step": 0.0,
+      "valid_output_root_mae": null
+    },
+    "segmented_choice": {
+      "n": 165,
+      "role_correct": 0.4303030303030303,
+      "step_exact": 0.17575757575757575,
+      "step_within_5": 0.3212121212121212,
+      "valid_role": 1.0,
+      "valid_step": 1.0,
+      "valid_output_root_mae": 38.85454545454545
+    }
+  },
+  "successful_api_calls": 2924,
+  "input_tokens": 36274816,
+  "estimated_input_cost_usd": 1.523542272,
+  "cost_note": "Estimate using historical reference price $0.042/M input tokens, not a current bill. Usage includes saved calls reused by this run, excludes unsuccessful HTTP attempts.",
+  "expected_n": 200,
+  "successful_n": 195,
+  "failed_n": 5,
+  "pending_n": 0,
+  "balance_stopped": false,
+  "run_wall_seconds": 1238.813,
+  "stage_recall": {
+    "recall_candidates": 117,
+    "expanded_candidates": 121,
+    "final_candidates": 86,
+    "n": 165,
+    "exact": 29,
+    "recall_rates": {
+      "recall_candidates": 0.7090909090909091,
+      "expanded_candidates": 0.7333333333333333,
+      "final_candidates": 0.5212121212121212
+    },
+    "reduction_lost": 35,
+    "reduction_loss_rate": 0.2892561983471074,
+    "final_accuracy_given_root_present": 0.3372093023255814
+  },
+  "complete": false,
+  "output_tokens": 445432,
+  "calls_by_stage": {
+    "final": 165,
+    "recall": 1155,
+    "reduce": 1574,
+    "direct": 30
+  },
+  "retention_tiers": {
+    "recall": {
+      "medium": 642,
+      "high": 171,
+      "low": 342
+    },
+    "reduce": {
+      "low": 687,
+      "medium": 796,
+      "high": 91
+    }
+  },
+  "successful_only": {
+    "n": 195,
+    "role_correct": 0.49230769230769234,
+    "step_exact": 0.2153846153846154,
+    "step_within_5": 0.3641025641025641,
+    "valid_role": 1.0,
+    "valid_step": 1.0,
+    "valid_output_root_mae": 34.53333333333333
+  },
+  "export_note": "Historical v5 Mini run only. Other-version comparisons omitted; no raw trajectory text or API request caches included."
+}

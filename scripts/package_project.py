@@ -43,7 +43,12 @@ def selected_paths(root):
     paths += sorted((root / "tests").glob("*.py"))
     paths += sorted((root / "docs").glob("*.md"))
     paths += sorted((root / "figures").glob("jev-rcta-adaptive-main*"))
-    return paths
+    v5_files = [".gitattributes", "prompts/jev_v5.json", "reports/jev_v5_prompts.md",
+                "reports/jev_v5_mini_report.md", "reports/jev_v5_mini_metrics.json",
+                "reports/jev_v5_mini_predictions.csv", "tests/jev_v5_reference.json"]
+    paths += [root / name for name in v5_files]
+    paths += sorted((root / "reproducibility/jev-v5-mini").glob("*.json"))
+    return sorted(set(paths))
 
 
 def private_values(root):

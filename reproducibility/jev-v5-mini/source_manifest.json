@@ -1,0 +1,24 @@
+{
+  "method": "JEV Choice v5",
+  "protocol": "jev-v1-prompts-adaptive-v5",
+  "historical_run": "results/jev_v5_mini",
+  "historical_config_is_not_a_new_run_config": true,
+  "source_files": {
+    "config.json": "c4436d1097761a74e3fb48ee7926c353f1cc1e9e29b194d8dc57c7675ec714bc",
+    "metrics.json": "1910321502e5d1c70b503b8b156854ae934388b24b7f065376ac3412d8e84be0",
+    "predictions.csv": "bdcd46c2c6c8fa7e22c122fae494fe05fa00bd68771f143ce59131c45e434335",
+    "result_audit.json": "4b0bea85ca1d055a5ae30930443cccf4b355ccfb6c2631041f4d4d2dded575dc"
+  },
+  "export_changes": {
+    "metrics.json": "Removed comparisons and baseline_comparison; added export_note",
+    "config.json": "Byte-identical historical provenance, not used to initialize new runs",
+    "predictions.csv": "Byte-identical, all 200 rows including failed samples",
+    "result_audit.json": "Byte-identical historical partial audit"
+  },
+  "excluded": [
+    "other-version code/results",
+    "trajectory text",
+    "request/response caches",
+    "credentials"
+  ]
+}

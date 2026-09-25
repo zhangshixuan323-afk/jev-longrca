@@ -1,0 +1,30 @@
+{
+  "trajectories": 195,
+  "requests": 2889,
+  "decisions": 3350,
+  "all_requests_identical": true,
+  "all_decisions_identical": true,
+  "all_prediction_fields_identical": true,
+  "network_calls": 0,
+  "seconds": 44.42,
+  "protocol": "jev-v1-prompts-adaptive-v5",
+  "note": "Offline equivalence check against the original saved v5 run; refactored source hashes require a fresh output directory.",
+  "synthetic_reference_cases": 7,
+  "main_tests": {
+    "run": 115,
+    "passed": 110,
+    "skipped_laya": 5
+  },
+  "rcta_frozen_sources_preserved": 15,
+  "old_runtime_modules": 5,
+  "new_runtime_modules": 2,
+  "old_runtime_lines": 1248,
+  "new_runtime_lines": 983,
+  "source_sha256": {
+    "jev_v5.py": "a8651a1564aacacd81b0630fcf5664d56abba5ea83d137c60831c4505a9f67b2",
+    "evaluate_jev_v5.py": "6e422d0bc52fc7b3a36254e75e9a1736ac07dcd6c9f2f28bc05208f6900d265e",
+    "evaluate.py": "833a0292826c286b18118bb190fa190bc5ee160bb393169f84180b6e0c5d967f",
+    "evaluate_full.py": "4f2dcd30836d13af4bfe8c71be4ce92e99607006b4eb67de21a779f5b2dd9bba",
+    "resume_full.py": "7b419dc71deb0a552dd56cf82afb233ab32663402d714c9883d500273d90b94a"
+  }
+}

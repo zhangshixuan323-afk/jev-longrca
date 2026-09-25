@@ -1,0 +1,11 @@
+# Preserve JEV v5 provenance bytes across platforms.
+scripts/jev_v5.py -text
+scripts/evaluate_jev_v5.py -text
+scripts/evaluate.py -text
+scripts/evaluate_full.py -text
+scripts/resume_full.py -text
+prompts/jev_v5.json -text
+reports/jev_v5* -text
+reproducibility/jev-v5-mini/*.json -text
+tests/jev_v5_reference.json -text
+tests/test_jev_v5.py -text

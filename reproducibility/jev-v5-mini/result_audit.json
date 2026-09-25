@@ -1,0 +1,12 @@
+{
+  "status": "partial_passed",
+  "offline": true,
+  "successful_trajectories": 195,
+  "expected_trajectories": 200,
+  "checked_calls": 2924,
+  "history_records_covered": 30574,
+  "six_runtime_prompts_match_approved_markdown": true,
+  "selection_decisions_replayed": true,
+  "config_sha256": "a7b976652bf5b7d21cd3ffefd7fbd6b486e8f427fda365950963a0b8ba705371",
+  "utc": "2026-09-23T13:12:44.171239+00:00"
+}
