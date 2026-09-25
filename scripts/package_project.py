@@ -41,10 +41,11 @@ def selected_paths(root):
     paths = [root / name for name in names]
     paths += sorted((root / "scripts").glob("*.py"))
     paths += sorted((root / "tests").glob("*.py"))
+    paths += sorted((root / "tests").glob("*_reference.json"))
     paths += sorted((root / "docs").glob("*.md"))
     paths += sorted((root / "figures").glob("jev-rcta-adaptive-main*"))
     paths += sorted((root / "prompts").glob("*.json"))
-    paths += sorted((root / "reports").glob("jev_v*_prompts.md"))
+    paths += sorted((root / "reports").glob("jev_v*.md"))
     paths += sorted((root / "reports").glob("mini_v2_v5_*"))
     approved = root / "reports/jev_prompt_revision.md"
     if approved.exists():

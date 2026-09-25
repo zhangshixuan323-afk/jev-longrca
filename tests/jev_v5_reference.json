@@ -1,0 +1,61 @@
+{
+  "provenance": "Captured from the original pre-merge jev_v5 implementation using deterministic synthetic Choice responses.",
+  "cases": [
+    {
+      "steps": 1,
+      "confidence": 0.5,
+      "fragmented": false,
+      "prediction_sha256": "3744e8431f1d31db21432a874f8803f6b5926a721df645f00683d9626382364e",
+      "calls_sha256": "47d66f26b8695d737e40970ea9dd9062185dda45cc5052792be8488767c23821",
+      "calls": 1
+    },
+    {
+      "steps": 3,
+      "confidence": 0.5,
+      "fragmented": false,
+      "prediction_sha256": "8cf813309ef2bf156fae9b674338fe3c6cf396dcf3e6cae39f505318e7673be5",
+      "calls_sha256": "40eb63116aed4a12592f065c8e0272f14cfdd0fe1360bd5b8b37cc407b2d1ac7",
+      "calls": 1
+    },
+    {
+      "steps": 280,
+      "confidence": 0.1,
+      "fragmented": false,
+      "prediction_sha256": "7aa9672fc69da3c1cada636c5adda4daaca571e06860f606eacd54afa5ed4daa",
+      "calls_sha256": "f52125cf52d0c286a1ea73716acbf466d39fc61c60fcb013e971a298d1fde96d",
+      "calls": 11
+    },
+    {
+      "steps": 280,
+      "confidence": 0.5,
+      "fragmented": false,
+      "prediction_sha256": "a035e87bee2855e69f5229fccd4ba12883dc6e67fc5465ff9157dfc49cd4fa9f",
+      "calls_sha256": "ea6e5f5d8c04120d4628036ad5d45a4d9b9ed4448c743513e0cbc6f774eddd02",
+      "calls": 7
+    },
+    {
+      "steps": 280,
+      "confidence": 0.8,
+      "fragmented": false,
+      "prediction_sha256": "91aded7bfc48e76032f5a19d6bcb8f6cce9dd08f7f6fef31af78fd7778681e6b",
+      "calls_sha256": "adcf41779ea6dc1c88880c506e6e225ff2641b811f31bbe2adac06a489482f3f",
+      "calls": 5
+    },
+    {
+      "steps": 280,
+      "confidence": null,
+      "fragmented": false,
+      "prediction_sha256": "50af3bb4c228bfbab23cf9c367ac6a76ec692bb12b9a085b37383e1044451993",
+      "calls_sha256": "6295634aeaf5fc8d48063620833edf154782c8ba849aed0513a6b3324bd678d3",
+      "calls": 11
+    },
+    {
+      "steps": 4,
+      "confidence": 0.5,
+      "fragmented": true,
+      "prediction_sha256": "cc3ee1759517fb572012a576752d2d240af28ed59e95e128f1d17cac07eaabb7",
+      "calls_sha256": "2c8ca9c1b618e8573a9423f0e4ccf21c513090bb5a2964f9cfa88d5a389c3d98",
+      "calls": 3
+    }
+  ]
+}
